@@ -1,0 +1,25 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.form-info {
+    max-width: 500px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin: auto;
+}
+
+#age {
+    width: 40%;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 55%;
+}
