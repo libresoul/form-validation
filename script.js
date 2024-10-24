@@ -1,4 +1,6 @@
 function FormSubmit(event) {
+    event.preventDefault();
+    
     const name = document.getElementById("name").value.trim();
     const address = document.getElementById("addr").value;
     const dob = document.getElementById("dob").value;
