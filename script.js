@@ -13,7 +13,7 @@ function FormSubmit(event) {
     const pin = document.getElementById("pin").value;
 
     // using extended regular expressions for pattern matching :)
-    const nameRegex = /^[A-Za-z]+(\s[a-z]+)?$/;
+    const nameRegex = /^[A-Za-z]+(\s[A-Za-z]+)?$/;
     const emailRegex =
         /^([A-Za-z])+[0-9]*(\.[A-Za-z0-9]+)*\@[A-Za-z]+\.[A-Za-z]{2,}$/;
     const ageRegex = /^[0-9]{1,2}$/;
