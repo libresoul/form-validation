@@ -102,6 +102,10 @@ Disease: ${disease}<br>
 Email: ${email}<br>
 `
         )
+        const pinHolder = document.getElementById("pinHolder");
+        pinHolder.innerHTML = (`PIN: ${pin}`);
+
+    }
 
     function clearErrors() {
             document.querySelectorAll('.error').forEach(function(element) {

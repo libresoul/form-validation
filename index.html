@@ -6,6 +6,13 @@
         <title>Patient Information</title>
         <link href="css/style.css" rel="stylesheet" />
         <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('pinHolder').addEventListener('click', function() {
+                    this.classList.toggle('revealed');
+                });
+            })
+        </script>
     </head>
     <body>
         <div class="form-info">
@@ -68,5 +75,8 @@
         </div>
 
         <div id="output" class="outputDiv"></div>
+        <div class="outputDiv">
+            <span id="pinHolder" class="blurred"> </span>
+        </div>
     </body>
 </html>
