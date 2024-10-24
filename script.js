@@ -90,6 +90,18 @@ function FormSubmit(event) {
         event.preventDefault();
         return false;
     }
+    else {
+        const outdiv = document.getElementById("output");
+        outdiv.innerHTML = (
+`Name: ${name}<br>
+Address: ${address}<br>
+Birth Date: ${dob} <br>
+Age: ${age} <br>
+Gender: ${gender} <br>
+Disease: ${disease}<br>
+Email: ${email}<br>
+`
+        )
 
     function clearErrors() {
             document.querySelectorAll('.error').forEach(function(element) {
