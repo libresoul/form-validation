@@ -11,19 +11,24 @@
         <div class="form-info">
             <fieldset>
                 <legend>Patient Information</legend>
-                <form id="mainform" onsubmit="FormSubmit()">
+                <form id="mainform" onsubmit="FormSubmit(event)">
+                    <span class="error" id="nameError"></span>
                     <label for="name">Name: </label>
                     <input type="text" id="name" value="" /> <br />
 
+                    <span class="error" id="addrError"></span>
                     <label for="addr">Address: </label>
                     <textarea id="addr" rows="4" cols="30"></textarea> <br />
 
+                    <span class="error" id="dobError"></span>
                     <label for="dob">Birth Date: </label>
                     <input type="date" id="dob" value="" /> <br />
 
+                    <span class="error" id="ageError"></span>
                     <label for="age">Age: </label>
                     <input type="text" id="age" value="" /> <br />
 
+                    <span class="error" id="genderError"></span>
                     <label for="gender">Gender: </label>
 
                     <label for="male">MALE </label>
@@ -37,6 +42,7 @@
                     />
                     <br />
 
+                    <span class="error" id="diseaseError"></span>
                     <label for="disease">Disease: </label>
                     <select id="disease" name="disease">
                         <option value="0">Select</option>
@@ -47,9 +53,11 @@
                     </select>
                     <br />
 
+                    <span class="error" id="emailError"></span>
                     <label for="email">Email: </label>
                     <input type="email" id="email" value="" /> <br />
 
+                    <span class="error" id="pinError"></span>
                     <label for="pin">PIN: </label>
                     <input type="password" id="pin" maxlength="6" value="" />
                     <br />
