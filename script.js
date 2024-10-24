@@ -1,4 +1,4 @@
-function FormSubmit() {
+function FormSubmit(event) {
     const name = document.getElementById("name").value.trim();
     const address = document.getElementById("addr").value;
     const dob = document.getElementById("dob").value;
@@ -71,8 +71,9 @@ function FormSubmit() {
         errorMessages.push("Pin should only contain digits");
     }
 
-    if (errorMessages) {
-        alert(errorMessages.join("\n"));
+    if (errorMessages.length > 0) {
+        alert("Form is not valid");
+        event.preventDefault();
         return false;
     }
 
