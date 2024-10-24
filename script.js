@@ -16,6 +16,8 @@ function FormSubmit() {
     const ageRegex = /^[0-9]{1,2}$/
     const pinRegex = /^\d+$/;
 
+    clearErrors();
+
 
     let errorMessages = [];
 
@@ -73,4 +75,10 @@ function FormSubmit() {
         alert(errorMessages.join("\n"));
         return false;
     }
+
+    function clearErrors() {
+            document.querySelectorAll('.error').forEach(function(element) {
+                element.textContent = '';
+            });
+        }
 }
